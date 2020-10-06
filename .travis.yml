@@ -9,7 +9,7 @@ install:
   - echo "no dependencies"
 
 script:
-  - python3.7 -m pytest -vvv my_test_proj/
+  - python -m pytest -vvv my_test_proj/
 
 branches:
   only:
