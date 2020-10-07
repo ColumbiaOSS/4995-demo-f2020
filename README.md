@@ -6,5 +6,5 @@ This is a demo project for COMS4995 - Open Source Development
 
 # Ideas 
 - A Different Idea
-idea1
+branch idea
 
