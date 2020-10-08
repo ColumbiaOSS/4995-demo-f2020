@@ -6,12 +6,15 @@ python:
 cache: pypi
 
 install:
-  - pip install flake8
+  - pip install flake8 codecov pytest pytest-cov
 
 script:
   - python -m flake8 my_test_proj/
-  - python -m pytest -vvv my_test_proj/
+  - python -m pytest -vvv my_test_proj/ --cov my_test_proj
 
+after_success:
+  - codecov
+ 
 branches:
   only:
   - master
