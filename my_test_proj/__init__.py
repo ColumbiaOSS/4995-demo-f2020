@@ -1,2 +1,1 @@
-from .foo import inc
-
+from .foo import inc  # noqa: F401

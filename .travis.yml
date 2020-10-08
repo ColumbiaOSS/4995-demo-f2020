@@ -6,9 +6,10 @@ python:
 cache: pypi
 
 install:
-  - echo "no dependencies"
+  - pip install flake8
 
 script:
+  - python -m flake8 my_test_proj/
   - python -m pytest -vvv my_test_proj/
 
 branches:
